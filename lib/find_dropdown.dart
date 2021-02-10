@@ -249,7 +249,7 @@ class FindDropdownState<T> extends State<FindDropdown<T>> {
                                     width: 1,
                                     color: Theme.of(context).dividerColor,
                                   ),
-                                  borderRadius: BorderRadius.circular(4.0),
+                                  borderRadius: BorderRadius.circular(15.0),
                                 ),
                                 child: Row(
                                   mainAxisAlignment:
