@@ -241,7 +241,7 @@ class FindDropdownState<T> extends State<FindDropdown<T>> {
                               bool showClearButton = snapshot.data != null &&
                                   widget.showClearButton;
                               return Container(
-                                padding: EdgeInsets.fromLTRB(15, 5, 5, 5),
+                                //padding: EdgeInsets.fromLTRB(15, 5, 5, 5),
                                 height: 40,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
