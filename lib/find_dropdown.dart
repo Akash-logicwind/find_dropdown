@@ -180,10 +180,10 @@ class FindDropdownState<T> extends State<FindDropdown<T>> {
             widget.label,
             style: widget.labelStyle ?? Theme.of(context).textTheme.subtitle1,
           ),
-        if (widget.label != null) SizedBox(height: 0),
+        //if (widget.label != null) SizedBox(height: 0),
         Column(
           mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             StreamBuilder(
               stream: _bloc.selected$,
@@ -241,7 +241,7 @@ class FindDropdownState<T> extends State<FindDropdown<T>> {
                               bool showClearButton = snapshot.data != null &&
                                   widget.showClearButton;
                               return Container(
-                                //padding: EdgeInsets.fromLTRB(15, 5, 5, 5),
+                                padding: EdgeInsets.fromLTRB(15, 5, 5, 5),
                                 height: 40,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
