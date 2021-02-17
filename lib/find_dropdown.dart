@@ -244,7 +244,7 @@ class FindDropdownState<T> extends State<FindDropdown<T>> {
                                 padding: EdgeInsets.fromLTRB(15, 5, 5, 5),
                                 height: 40,
                                 decoration: BoxDecoration(
-                                  color: Colors.white,
+                                  color: Colors.transparent,
                                   border: Border.all(
                                     width: 1,
                                     color: Theme.of(context).dividerColor,
