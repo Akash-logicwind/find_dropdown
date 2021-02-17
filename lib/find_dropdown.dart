@@ -180,7 +180,7 @@ class FindDropdownState<T> extends State<FindDropdown<T>> {
             widget.label,
             style: widget.labelStyle ?? Theme.of(context).textTheme.subtitle1,
           ),
-        if (widget.label != null) SizedBox(height: 5),
+        if (widget.label != null) SizedBox(height: 0),
         Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -299,16 +299,15 @@ class FindDropdownState<T> extends State<FindDropdown<T>> {
                 builder: (context, snapshot) {
                   print("${widget.label} - ${snapshot.data}");
                   return ConstrainedBox(
-                    constraints: BoxConstraints(minHeight: 15),
-                    child: Padding(
-                      padding: const EdgeInsets.all(5),
-                      child: Text(
-                        snapshot.data ?? "",
-                        style: Theme.of(context).textTheme.bodyText2.copyWith(
-                            color: snapshot.hasData
-                                ? Theme.of(context).errorColor
-                                : Colors.transparent),
-                      ),
+                    constraints: BoxConstraints(minHeight: 0),
+                    // child:
+                    //padding: const EdgeInsets.all(5),
+                    child: Text(
+                      snapshot.data ?? "",
+                      style: Theme.of(context).textTheme.bodyText2.copyWith(
+                          color: snapshot.hasData
+                              ? Theme.of(context).errorColor
+                              : Colors.transparent),
                     ),
                   );
                 },
